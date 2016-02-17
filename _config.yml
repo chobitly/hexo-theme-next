@@ -3,20 +3,23 @@
 # ---------------------------------------------------------------
 
 # Place your favicon.ico to /source directory.
-favicon: /favicon.ico
+favicon: /favicon.png
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo, NexT"
+keywords: "Chobitly, Android"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
 # Set rss to specific value if you have burned your feed already.
 rss:
+feed:
+  type: atom
+  path: atom.xml
+  limit: 0
+  hub:
 
 # Specify the date when the site was setup
-#since: 2015
-
-
+since: 2015
 
 
 # ---------------------------------------------------------------
@@ -27,10 +30,10 @@ rss:
 # Remove leading slashes ( "/archives" -> "archives" )
 menu:
   home: /
-  #categories: /categories
-  #about: /about
-  archives: /archives
+  categories: /categories
   tags: /tags
+  archives: /archives
+  about: /about
   #commonweal: /404.html
 
 
@@ -57,21 +60,19 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
+#scheme: Muse
 #scheme: Mist
-#scheme: Pisces
+scheme: Pisces
 
-
-
-# ---------------------------------------------------------------
-# Sidebar Settings
-# ---------------------------------------------------------------
 
 
 # Social links
-# social:
-  #GitHub:
-  #Others:
+social:
+  GitHub: https://github.com/chobitly
+  Twitter: https://twitter.com/chobitly
+  Google+: https://plus.google.com/+汪璐chobitly
+  #知乎: https://www.zhihu.com/people/chobitly
+  公益404: /404.html
 
 # Social Icons
 social_icons:
@@ -80,13 +81,17 @@ social_icons:
   GitHub: github
   Twitter: twitter
   Weibo: weibo
+  Google+: google-plus
+  公益404: heartbeat
 
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
 # default : /images/default_avatar.jpg
-#avatar:
+avatar: https://avatars1.githubusercontent.com/u/498196?v=3&s=460
+#avatar: https://s.gravatar.com/avatar/d215667910cbc2be38db18917c249713?s=80
+#avatar: https://s.gravatar.com/avatar/873dc1dff04df4fca4edff6bcc029631?s=80
 
 
 # TOC in the Sidebar
@@ -105,8 +110,8 @@ toc:
 
 sidebar:
   # Sidebar Position, available value: left | right
-  position: left
-  #position: right
+  #position: left
+  position: right
 
   # Sidebar Display, available value:
   #  - post    expand on posts automatically. Default.
@@ -117,7 +122,6 @@ sidebar:
   #display: always
   #display: hide
   #display: remove
-
 
 
 # ---------------------------------------------------------------
@@ -131,7 +135,7 @@ sidebar:
 #   image: url-of-image   - Images's url
 custom_logo:
   enabled: false
-  image:
+  image: https://avatars1.githubusercontent.com/u/498196?v=3&s=460
 
 
 # Code Highlight theme
@@ -158,7 +162,7 @@ use_font_lato: true
 # ---------------------------------------------------------------
 
 # MathJax Support
-mathjax:
+mathjax: true
 
 
 # Swiftype Search API Key
@@ -168,7 +172,7 @@ mathjax:
 #baidu_analytics:
 
 # Duoshuo ShortName
-#duoshuo_shortname:
+#duoshuo_shortname: chobitly
 
 # Disqus
 #disqus_shortname:
@@ -182,20 +186,20 @@ mathjax:
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
-#google_site_verification:
+#google_site_verification: FYnDiBKknJTRkOEahMuUGjnFLD5_TBptwF6xMVOLPUM
 
 
 # Google Analytics
-#google_analytics:
+#google_analytics: UA-33872452-2
 
 
 # Make duoshuo show UA
 # user_id must NOT be null when admin_enable is true!
 # you can visit http://dev.duoshuo.com get duoshuo user id.
-duoshuo_info:
-  ua_enable: true
-  admin_enable: false
-  user_id: 0
+#duoshuo_info:
+#  ua_enable: true
+#  admin_enable: true
+#  user_id: 13956950
   #admin_nickname: ROOT
 
 
